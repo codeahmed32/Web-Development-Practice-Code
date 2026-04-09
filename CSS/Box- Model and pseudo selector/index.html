@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box-Model</title>
+    <style>
+      .box {
+        width: 300px;
+        height: 200px;
+        background-color: rgb(104, 223, 104);
+        /* padding-left: 10px; */   
+        padding-top: 20px; /* padding: ; is used in internal spacing  */
+        margin-top: 30px;
+        /* margin-left: 30px; margin is used for the outer spacing  */
+      }
+      .newConainer {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(99, 165, 216);
+        padding-left: 40px;
+        padding-top: 20px;
+        margin-top: 20%;
+        margin-left: 60%;
+      }
+      .btn {
+        padding: 10px;
+        border-radius: 30px;
+      }
+      /* Pseudo classes */
+      .btn:hover {
+        background-color: rgb(42, 255, 187);
+        scale: 1.2;
+      }
+      .nameInput:active {
+        /* when clicked it will be known active */
+        background-color: blue;
+      }
+      .nameInput:focus {
+        background-color: rgb(236, 57, 99);
+        color: white;
+      }
+      .anchorTag:link {
+        color: rgb(252, 217, 63);
+      }
+      .anchorTag:visited {
+        color: rgb(29, 253, 130);
+      }
+      .parent {
+        background-color: rgb(255, 195, 84);
+        width: 300px;
+        height: 400px;
+      }
+      .child:first-child {
+        background-color: rgb(255, 50, 50);
+      }
+      .child:last-child {
+        background-color: rgb(255, 50, 50);
+      }
+
+      /* pseudo elements  */
+
+      .para::first-line{
+        color: orange;
+      }
+      .para::first-letter{
+        font-size: 40px;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+
+      .title::before{
+        content: "Ahmed";
+        color: #2A3B6A;
+    }
+    .title::after{
+        content: "MernStack Development";
+        color: #a049f7;
+    }
+      /* 3 to 4 ways of colors   */
+    </style>
+  </head>
+  <body>
+    <h1 class="title">Abdullah</h1>
+    <p class="para">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum nemo
+      modi, itaque provident esse placeat totam officia voluptate corporis
+      laboriosam iusto debitis! Praesentium optio reiciendis vero quidem
+      explicabo aperiam quisquam ullam error.
+    </p>
+    <div class="parent">
+      hi how are you? Iam a parent Div
+      <div class="child">Iam a child Div</div>
+      <div class="child">Iam a child Div</div>
+      <div class="child">Iam a child Div</div>
+      <div class="child">Iam a child Div</div>
+      <div class="child">Iam a child Div</div>
+    </div>
+    <div class="box">hello</div>
+    <div class="newConainer">HI</div>
+
+    <button class="btn">Start Again</button>
+    <a href="https://www.w3schools.com/" class="anchorTag"> Visit Me</a>
+    <input
+      type="text"
+      name=""
+      id=""
+      placeholder="enter your name"
+      class="nameInput"
+    />
+  </body>
+</html>

@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Flex-Box</title>
+    <style>
+      .container {
+        width: 100%;
+        height: 400px;
+        background-color: rgb(237, 236, 150);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* justify-content: flex-start; */
+        /* justify-content: flex-end; */
+        /* justify-content: space-between; */
+        /* justify-content: space-around; */
+        /* justify-content: space-evenly; */
+        flex-wrap: wrap;
+        align-items: flex-end;
+      }
+
+      .box {
+        width: 50px;
+        height: 50px;
+      }
+      .box1 {
+        background-color: rgb(227, 12, 202);
+      }
+      .box2 {
+        background-color: rgb(10, 255, 120);
+        position: relative;
+        bottom: 50px;
+      }
+      .box3 {
+        background-color: rgba(255, 115, 0, 0.938);
+      }
+      .box4 {
+        background-color: rgb(255, 0, 0);
+        position: relative;
+        bottom: 50px;
+        
+      }
+
+      .whatsappLogo {
+        width: 50px;
+        height: 50px;
+        /* position: static; it will stay as it is*/
+        /* position: fixed; it will stay fixed it will not move with scroll*/
+        /* position: relative;  it will stay in normal flow but we can assign properties to it like : top bottom and left right*/
+        /* position: absolute; it will stay on the same place we audjusted it but it will move with scroll*/
+        /* position: sticky; */
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+      }
+      .chatBox {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        width: 50px;
+        height: 50px;
+      }
+      .nav-bar {
+        width: 100%;
+        height: 90px;
+        /* display: flex; */
+        position: sticky;
+        background-color: aqua;
+        top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav-bar">
+      <div>Student</div>
+      <div>softskills</div>
+      <div>institute</div>
+      <div>Qualification</div>
+    </div>
+    <div class="container">
+      <div class="box box1">Box1</div>
+      <div class="box box2">Box2</div>
+      <div class="box box3">Box3</div>
+      <div class="box box4">Box4</div>
+    </div>
+
+    <img src="whatsapp.png" alt="whatsapp logo" class="whatsappLogo" />
+    <img src="chatbox.png" alt="whatsapp logo" class="chatBox" />
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia
+      aspernatur nobis laborum molestiae nisi ipsam odio fuga fugit maiores ab
+      ut ipsum, amet unde exercitationem sint assumenda alias nemo numquam
+      magnam, accusantium ea dolores. Labore numquam odio reiciendis voluptas
+      dignissimos voluptate nam recusandae eos repudiandae unde accusantium cum
+      deserunt consequatur aliquam velit necessitatibus cumque alias ex maxime,
+      facere veritatis quos, eum enim! Dignissimos cupiditate fugit neque quidem
+      dolore repudiandae saepe nesciunt impedit fugiat consequatur, quod quo
+      aspernatur ut. Provident quibusdam ad incidunt ea repellat, ullam suscipit
+      itaque animi quisquam illo nam maxime numquam blanditiis. Eaque omnis
+      blanditiis quibusdam reprehenderit earum officiis alias vel facere
+      perspiciatis sunt culpa minima numquam distinctio recusandae tenetur
+      impedit corrupti et sequi voluptate excepturi, natus odit. Voluptatem
+      repudiandae soluta, id excepturi vitae eos ipsa sunt dignissimos aliquam
+      iure quos, ullam quasi sed magnam vero, quas dolorum eligendi! Recusandae
+      animi mollitia, accusamus natus praesentium error obcaecati delectus
+      maxime? Veritatis, odio voluptatibus nobis deleniti vel dolor. Maxime
+      magnam est sequi harum porro aliquid nihil magni laudantium officiis
+      adipisci consectetur perferendis, ipsum at expedita repellat fuga sint,
+      provident eligendi, placeat et vitae vel suscipit! Nostrum porro nemo
+      expedita tempora quibusdam? Ea, eligendi nisi rem officiis dolor a quas
+      quae voluptate atque dignissimos perspiciatis unde repellendus in.
+      Laboriosam, qui? Sint, sapiente! Aperiam quia perspiciatis rerum
+      voluptatibus laudantium! Voluptatem odit nemo similique sint tempore
+      nostrum reiciendis, ratione expedita quam impedit sapiente aspernatur
+      voluptas culpa facere iure maxime ipsum consectetur adipisci laudantium
+      ducimus. Iste minus, ratione eveniet tempora, laudantium consectetur
+      praesentium doloribus ab consequatur, excepturi vel incidunt libero
+      facilis! Rerum non sunt numquam doloribus, temporibus quas cupiditate ea
+      dignissimos harum aperiam. Molestiae repudiandae, labore, aut sunt tenetur
+      quas deserunt veritatis optio, commodi doloremque rem provident deleniti
+      quam nulla magnam perspiciatis mollitia. Laudantium nesciunt debitis
+      voluptate hic voluptatum facere porro explicabo fuga voluptas. Accusantium
+      culpa, illo officia dicta eos optio laudantium id quae nisi, ullam fugiat
+      totam veniam in omnis consequatur? Commodi esse rerum vero adipisci
+      consequuntur, cumque voluptate, numquam molestias eos, asperiores eum
+      assumenda. Repudiandae eos sapiente, tempore enim quis eligendi, ea
+      dolorem consequuntur asperiores minus nihil quas illum a quam eaque ipsam
+      facilis, quaerat aut dolorum ex nulla accusamus est. Corporis natus fuga
+      quod eligendi quam aperiam eum officiis eos voluptates temporibus. Quos
+      fugit rerum soluta eos perspiciatis, obcaecati ipsa porro enim, quis
+      facilis nostrum! Voluptas ipsum optio ratione eaque odio fugiat. Id, magni
+      doloremque! Necessitatibus accusantium ad cum doloremque iusto ipsam
+      minima ducimus doloribus ex ratione voluptas ut nesciunt facilis
+      reiciendis pariatur quaerat asperiores eum, beatae non, culpa et eveniet
+      iste vitae nulla? Sint omnis voluptates facere quia commodi tenetur a
+      inventore. Dolores commodi harum, molestias non quis est veritatis rem
+      blanditiis, magni, reprehenderit fugit reiciendis enim ducimus fuga
+      distinctio ipsa tempora et iure. Necessitatibus soluta iusto fugit. Nulla
+      excepturi repellat eum porro ex tempora itaque mollitia perspiciatis
+      maxime repellendus, praesentium, commodi blanditiis est perferendis
+      expedita culpa officia sapiente eveniet labore doloremque quidem. Impedit
+      illo nam rem commodi, suscipit natus est quo, omnis soluta beatae eum
+      voluptates. Nostrum omnis hic corrupti. Quod in illum architecto
+      cupiditate consectetur id modi natus vitae repellendus, omnis vel,
+      assumenda dignissimos laboriosam quis rem. Tempore aspernatur ullam quas
+      aliquam assumenda ad perspiciatis dolorum laudantium. Praesentium iste
+      nostrum iusto corporis exercitationem. Pariatur explicabo vero vel
+      molestiae facere. Fuga eos, harum blanditiis maxime voluptas inventore
+      minima quidem laudantium architecto distinctio maiores quam ut non dolor.
+      Alias aut facilis minus eaque et velit quo illo rem non ullam temporibus
+      at voluptas nesciunt dicta eos nulla fugit, explicabo cupiditate dolorum,
+      ratione placeat officia cum perferendis? Tempore, fugit minus maiores
+      aspernatur obcaecati provident, fuga consequuntur cumque voluptatibus,
+      labore molestiae impedit doloribus atque nihil exercitationem esse dolor
+      autem quidem ex velit. Dolor non ut id dicta maiores? Obcaecati
+      exercitationem quis dicta explicabo voluptatem quasi dolore, possimus
+      culpa natus ab quaerat earum deserunt eaque ipsa, perspiciatis vel esse ea
+      facilis quisquam dolor eum magni! Voluptate neque, molestias tempora eaque
+      in iusto sint amet ipsa distinctio quam voluptates ad animi nam quos unde
+      accusantium optio culpa. Officiis voluptatibus enim corrupti. Nulla
+      repellat accusamus, in, illum facere, saepe vero quisquam harum et minus
+      placeat? Nisi fuga id nemo eveniet saepe veritatis molestias unde aperiam?
+      Doloremque sunt cumque culpa maiores ullam nisi, pariatur voluptatibus
+      fugiat error sed temporibus quae dolorem distinctio soluta dolorum harum
+      nulla animi repellat omnis. Voluptatem ullam molestiae ea deleniti
+      pariatur aliquam totam maiores quae quibusdam fugiat veniam illo, nihil
+      tempora, veritatis corporis iste. Voluptate blanditiis distinctio cumque
+      iusto culpa, dignissimos nulla tempore in quia eaque, quasi nobis numquam
+      mollitia vitae saepe consectetur deleniti nisi delectus. Quo saepe facilis
+      voluptatum est ipsam voluptatibus, illo enim ipsa fugit soluta temporibus
+      esse aperiam ut quos? Quo aliquam fuga hic commodi est iure. Quidem
+      cumque, itaque, nobis natus commodi consequatur fuga repudiandae voluptate
+      enim eius voluptas eligendi fugit nesciunt, necessitatibus incidunt.
+      Obcaecati ex, repellat consequuntur officia modi ratione libero quaerat
+      dicta suscipit odit, odio eaque doloribus nobis ipsum dolorem vero tempora
+      tempore eos. Consequatur consectetur corporis dolores placeat ipsa in
+      cumque natus quidem nesciunt tempora? Blanditiis similique eveniet dolorum
+      eum. Commodi illo molestias totam deleniti sint. Non dolorum accusamus et
+      ex at molestiae omnis odio eum. Dolorem sint nam quia assumenda quos
+      reiciendis, id pariatur laudantium numquam, explicabo consequuntur atque
+      corrupti doloremque? Eveniet nemo fuga assumenda tempora incidunt
+      provident magni at deserunt esse repellat, aut aperiam natus quia officiis
+      voluptatibus possimus corrupti libero doloribus. Nesciunt aspernatur
+      ratione numquam natus quam praesentium facere in consectetur at.
+    </p>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading Data from the input tags </title>
+</head>
+<body>
+    <!-- making a form -->
+    <form onsubmit="calculatePercentage(); return false;">
+
+        <!-- calculating percentage of students by dom manipulation in input tags -->
+        <input type="number" name = "totalMarks" placeholder = "Total Marks" id="totalMarks">
+        <input type="number" name = "obtMarks" placeholder = "Obtained Marks" id="obtMarks">
+        <button>Calculate</button>
+        <div id="totalPercentage"></div>
+
+
+    </form>
+
+    <form onsubmit="calculateBMI();return false;" >
+        <input type="number" placeholder="Enter Weight (Kg)" name="weight" id="weightHuman"> 
+        <input type="number" placeholder="Enter height (Cm)" name="height" id="heightHuman">
+        <button>Calculate BMI</button>
+        <div id="resultBMI"></div>
+
+    </form>
+
+    <!-- Dynamic Dom Manipulation 
+    It  basically starts with your Data (the array) and uses a Loop (the map function) to drive the UI Update. Essentially, you are "mapping" your data to the interface. Instead of manually typing out four separate <h2> tags in your HTML file 
+    -->
+    
+    <div id="fruitNames"></div>
+    
+    <script src="index.js"></script>
+</body>
+</html>

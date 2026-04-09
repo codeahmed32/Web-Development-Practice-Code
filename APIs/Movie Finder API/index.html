@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie - Finder</title>
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h1{
+            font-size: 30px;
+        }
+        h1::after{
+            content: " Finder APP";
+            color: rgb(255, 62, 62);
+            text-decoration: 3px underline ;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+            gap: 30px;
+        }
+        #searchMovie{
+            /* font-size: 23px; */
+        border: 1px solid rgba(101, 101, 101, 0.482);
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        button{
+            /* font-size: 23px; */
+            width: 190px;
+            border-radius: 5px;
+            border: none;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            background-color: rgb(55, 131, 253);
+            color: white;
+        }
+        #displayContent{
+            width: 50%;
+            height: 400px;
+            border: 1px solid rgba(101, 101, 101, 0.482);
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Movie</h1>
+        <!-- Movie Finder By using Api -->
+        <form onsubmit="getMovies(); return false">
+
+            <input type="text" name="searchMovie" id="searchMovie" placeholder="Search Here">
+
+            <button>Search For Movie</button>
+
+        </form>
+
+        <div id="displayContent"></div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

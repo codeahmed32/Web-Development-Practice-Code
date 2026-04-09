@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medical - ChatBot</title>
+    <style>
+      * {
+        font-family:
+          "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      h1 {
+        font-size: 50px;
+      }
+      #query,
+      button {
+        font-size: 20px;
+      }
+
+      h1::after {
+        content: "ChatBot";
+        font-size: 50px;
+        color: rgb(105, 236, 105);
+        text-decoration: underline 10px;
+      }
+      #answer {
+        font-size: 17px;
+        width: 700px;
+        padding: 40px;
+        height: 150px;
+        border: 2px solid black;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Medical</h1>
+      <form onsubmit="getChatBot(); return false;">
+        <input type="text" id="query" name="query" placeholder="Enter Query" required/>
+        <button>Send query</button>
+      </form>
+
+      <div id="answer"></div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

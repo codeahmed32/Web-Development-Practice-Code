@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom selectors</title>
+</head>
+<body>
+    <div>
+        <h1> A quick calculators</h1>
+        <h2>Area calculator, BMI Calculator, Age Calculator</h2>
+
+        
+        <button onclick="calculateArea()">Calculate Area</button>
+        <div id="Areares">Result For Area Will display here</div>
+
+        <button onclick="calculateBMI()">Calculate BMI</button>
+        <div id="bmiRes">Result For BMI Will display here</div>
+
+        <button onclick="calculateAge()">Calculate Age</button>
+        <div id="ageCal">Know your Age </div>
+
+
+        <!-- making form and accessing the data using the DOM function  -->
+
+        <form onsubmit="areaCal(); return false">
+            <input type="number" placeholder="Enter Lenght" id="lenght" required>
+            <input type="number" placeholder="Enter Lenght" id="width" required>
+            <div id="results"></div>
+            <button>calculate</button>
+        </form>
+        
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

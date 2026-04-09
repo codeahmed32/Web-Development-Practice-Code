@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+</head>
+<body>
+
+
+    <form onsubmit="getweather(); return false">
+        <input type="text" name ="city" id ="city" placeholder = "Enter city">
+        <button>check weather</button>
+    </form>
+
+    <form onsubmit="getChatbotAnswer(); return false">
+        <input type="text" id="query" name="query" placeholder="Enter your Query">
+        <button>Send</button>
+    </form>
+    
+    <div id="weatherDisplay"></div>
+    <div id="answer"></div>
+
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
