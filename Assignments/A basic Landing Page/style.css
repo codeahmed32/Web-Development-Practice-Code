@@ -1,0 +1,252 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+body {
+  background-color: rgb(35, 35, 35);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+*{
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+}
+
+.logo-title-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    /* border: 1px solid white; */
+}
+.logo-title-container > h2{
+    color: #3777DE;
+}
+ .logo-title-container > img{
+    padding: 0px 8px;
+    border-radius: 23px;
+
+}
+.logo{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.logo > a{
+    padding: 8px 6px;
+    border-radius: 4px;
+    width: 106px;
+    text-align: center;
+}  
+.logo > a:hover{
+    color: #3777DE;
+    background-color: #fff;
+} 
+
+.nav-elements > button{
+    padding: 8px 13px;
+    border-radius: 4px;
+    width: 90px;
+    border: 1px solid white;
+    color: black;
+}
+.nav-elements > button:hover{
+    background-color: #3777DE;
+    color: white;
+    border: none;
+    transition: 0.4s;
+    scale: 1.1;
+}
+
+
+
+/* Main Text section */
+
+
+
+.main-text{
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    /* text-align: center; */
+}
+.texts{
+    padding: 20px 0px;
+    width: 35%;
+}
+.texts > P{
+    padding: 30px 0px;
+}
+.main-text span{
+    color: #3777DE;
+    font-weight: 800;
+}
+
+
+
+/* main ticket structure */
+
+
+
+.ticket-container{
+    display: flex;
+    justify-content: center;
+    
+}
+.ticket-title{
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    padding: 10px 10px;
+}
+.ticket-wrapper{
+    /* border: 2px solid rgba(177, 174, 174, 0.446); */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* gap: px; */
+    width: 37%;
+    height: 250px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.03); 
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+
+}
+
+
+/*  */
+.profile-name-container{
+    display: flex;
+    align-items: center;
+}
+.person-details>h2{
+    color: #3777DE;
+}
+.person-details > p{
+    font-weight: 700;
+}
+
+.image-person{
+    padding: 10px;
+}
+.image-person>img{
+    width: 70px;
+    border-radius: 12px;
+}
+.access-btn > button{
+    padding: 10px;
+    border-radius: 5px;
+    /* width: 40%; */
+    color: black;
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+}
+.access-btn > button:hover{
+    scale: 1.1;
+    transition: 0.4s;
+    background-color: #3777DE;
+    color: white;
+}
+.access-btn{
+    margin: auto;
+}
+
+
+
+/* Media querys */
+
+/* --- 1. Large Desktops / TVs (Optional) --- */
+@media screen and (min-width: 1400px) {
+    .ticket-wrapper {
+        max-width: 1200px; /* Prevents the design from stretching too wide */
+        margin: 0 auto;
+        width: 25%;
+        height: 280px;
+    }
+    .texts{
+        width: 25%;
+    }
+    .ticket-container{
+        margin-top: 120px;
+    }
+}
+
+/* --- 2. Tablets & Small Laptops (Current max-width: 768px) --- */
+@media screen and (max-width: 1024px) {
+    /* Adjustments for smaller laptops or horizontal tablets */
+    .texts {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* 1. Make the text content wider so it's readable */
+    .texts {
+        width: 90%;
+        padding: 40px 10px;
+    }
+
+    /* 2. Make the ticket container wider */
+    .ticket-wrapper {
+        width: 95%;
+        height: auto; 
+        padding-bottom: 20px;
+    }
+
+    /* 3. Adjust the Header/Nav for small screens */
+    .logo-title-container {
+        /* flex-direction: column; */
+        gap: 15px;
+        text-align: center;
+    }
+
+    /* 4. Font adjustments */
+    .texts h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* --- 3. Mobile Phones (Standard max-width: 480px) --- */
+@media screen and (max-width: 480px) {
+    .logo-title-container {
+        padding: 10px;
+    }
+    
+    .ticket-title {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .texts h1 {
+        font-size: 1.25rem; /* Slightly smaller for small screens */
+    }
+    
+    /* Ensure images or large elements don't overflow */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    .logo{
+        display: none;
+    }
+}
+
+/* --- 4. Very Small Devices (Under 320px) --- */
+@media screen and (max-width: 320px) {
+    .texts {
+        padding: 20px 5px;
+    }
+    .texts h1 {
+        font-size: 1.1rem;
+    }
+}

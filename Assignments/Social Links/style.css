@@ -1,0 +1,162 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 8%);
+    font-family: "Inter", sans-serif;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    border: 1px solid black;
+    width: 300px;
+    height: 500px;
+    border-radius: 12px;
+    background-color: hsl(0, 0%, 12%);
+    color: hsl(0, 0%, 100%);
+}
+
+.img-location-section{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    align-items: center;
+    /* border: 1px solid white; */
+    font-size: 14px;
+    width: 60%;
+    height: 30%;
+    padding-top: 25px;
+}
+.img-location-section > img {
+    width: 60px;
+    border-radius: 50%;
+    background-size: cover;
+}
+.para-links > a:nth-child(1){
+    color: hsl(75, 94%, 57%);
+    text-decoration: none;
+}
+
+/* Paragraph and Links part */
+.para-links{
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.para-links > a:nth-child(1){
+    font-size: 12px;
+}
+.links{
+    width: 70%;
+    padding: 10px 0px;
+    text-align: center;
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    border-radius: 7px;
+}
+.links:hover{
+    transition: 0.4s;
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 8%);
+    scale: 1.03;
+}
+
+
+
+@media screen and (min-width:0) and (max-width:480px){
+
+    .para-links{
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.links:hover{
+    transition: 0.4s;
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 8%);
+    scale: 1.03;
+}
+.links{
+    width: 70%;
+    padding: 10px 0px;
+    text-align: center;
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    border-radius: 7px;
+}
+.main-container{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    border: 1px solid black;
+    width: 300px;
+    height: 500px;
+    border-radius: 12px;
+    background-color: hsl(0, 0%, 12%);
+    color: hsl(0, 0%, 100%);
+}
+
+}
+@media (hover: hover) and (max-width:480px) {
+  .link:hover {
+    background-color: hsl(75, 94%, 57%);
+    color: black;
+    cursor: pointer;
+  }
+}
+
+
+
+/* iPhone 13, 14, 15 (Pro/Standard) */
+/* @media screen and (max-width: 390px) { */
+    /* width: 300px; */
+    /* .main-container{
+        width: 350px;
+        height: 90vh;
+    }
+    .para-links{
+        width: 100%;
+        font-size: 17px;
+    }
+    .links{
+        width: 70%;
+    }
+    .para-links > a:nth-child(1){
+    font-size: 15px;
+}
+.img-location-section{
+    font-size: 17px;
+}
+    .links{
+    width: 90%;
+    padding: 20px 0px;
+    text-align: center;
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    border-radius: 7px;
+}
+}
+
+
+@media screen and (min) */
