@@ -44,6 +44,8 @@ body {
 .logo > a:hover{
     color: #3777DE;
     background-color: #fff;
+    transition: 0.4s;
+
 } 
 
 .nav-elements > button{
@@ -58,7 +60,6 @@ body {
     color: white;
     border: none;
     transition: 0.4s;
-    scale: 1.1;
 }
 
 
@@ -76,7 +77,13 @@ body {
     align-items: center;
     /* text-align: center; */
 }
+/* .main-text > h1{
+    font-size: 30px;
+} */
 .texts{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     padding: 20px 0px;
     width: 35%;
 }
