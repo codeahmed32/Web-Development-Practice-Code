@@ -1,0 +1,531 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+    text-decoration: none;
+
+}
+
+body {
+    min-height: 100vh;
+}
+
+.navbar {
+    padding: 0px 15px;
+    max-width: 100vw;
+    height: 65px;
+    background-color: #131921;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.area-delivery>p {
+    font-size: 13px;
+    text-align: center;
+}
+
+.country-icon {
+    font-size: 14px;
+    gap: 5px;
+    font-weight: 700;
+}
+
+.flex {
+    display: flex;
+}
+
+.logo-amazon {
+    width: 100px;
+    flex-direction: flex-end;
+}
+
+.all-dropdown {
+    gap: 4px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 12px;
+    width: 50px;
+    height: 40px;
+    background-color: #edecec;
+    color: rgb(136, 135, 135);
+    cursor: pointer;
+}
+
+.search-amazon {
+    border: none;
+    border-top-left-radius: none;
+    border-bottom-left-radius: none;
+    width: 500px;
+    padding: 12px 8px;
+    /* border-radius: 8px; */
+}
+
+.bgc-search {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 12px 13px;
+    background-color: #FEBD69;
+    color: black;
+}
+
+.flag-dropDwn {
+    align-items: center;
+    font-size: 13px;
+    padding: 0px 8px;
+}
+
+.acc-login-section>p {
+    font-size: 12px;
+
+}
+
+.acc-lists {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.acc-lists>a {
+    color: white;
+}
+
+.return-texts :nth-child(1) {
+    font-size: 12px;
+}
+
+.return-texts :nth-child(2) {
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.cart-section {
+    gap: 5px;
+}
+
+.cart-section :nth-child(1) {
+    font-size: 25px;
+}
+
+/* Main Nav Ends Here */
+
+/* Secondary Nav starts */
+
+.secondryNav {
+    max-width: 100%;
+    height: 40px;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 0px 23px;
+    background-color: #232F3E;
+    gap: 15px;
+    align-items: center;
+    color: white;
+}
+
+.secondryNav>a {
+    color: white;
+}
+
+
+/* Secondary Nav starts ends*/
+
+
+.hero-section {
+    /* background: url(./hero-section-image1.png); */
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 1) 100%),
+        url('./images/hero-section-image1.png');
+
+    width: 100%;
+    height: 500px;
+    background-size: 150%;
+    background-size: cover;
+}
+
+/* .cards{
+    background-color: white;
+    overflow: hidden;
+    width: 320px;
+    height: 400px;
+
+
+} */
+.cards-section {
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 1) 100%);
+    justify-content: space-around;
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    background-color: #E3E6E6;
+    padding: 10px;
+}
+
+.card-wrapper {
+    border-radius: 4px; 
+    background-color: white;
+    overflow: hidden;
+    height: 450px;
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid #b8b8b8;
+    /* box-shadow: 20px 20px 10px 10px rgba(0, 0, 0, 0.1); */
+}
+.card-wrapper > h2{
+    font-size: 15px;
+}
+
+.card-image {
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+    background-color: #f8f8f8;
+
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden; */
+    background-color: #f8f8f8;
+
+}
+
+/* second card */
+.second_card{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    /* overflow: hidden;  */
+
+}
+.direction-column{
+    flex-direction: column;
+}
+.img-section-one{
+    gap: 12px;
+    font-size: 15px;
+}
+
+.img-section-two{
+    gap: 12px;
+    font-size: 15px;
+}
+/* third card */
+.card3-first-section{
+    width: 100%;
+    height: 250px;
+    /* border: 1px solid black; */
+    overflow: hidden;
+    flex-direction: column;
+}
+.card3-first-section >  img{
+    height: 80%;
+    object-fit: cover;
+    height: 200px;
+    overflow: hidden;
+}
+.card3-second-section{
+    justify-content: space-evenly;
+    width: 100%;
+    height: 90px;
+    gap: 10px;
+    overflow: hidden;
+
+}
+.card3-second-section img{
+    width: 50px;
+    font-size: 12px;
+}
+.thirdCardLink{
+    height: 2px;
+}
+
+
+
+/* horizontal section 1 */
+
+/* Container styling */
+.amazon-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.amazon-container > h2 {
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+/* The Horizontal Scroll Wrapper */
+.product-slider {
+  display: flex;
+  gap: 15px;             
+  overflow-x: auto;      
+  padding-bottom: 10px;  
+  scrollbar-width: thin; 
+}
+
+.product-card {
+  overflow: hidden;  
+  flex: 0 0 auto;        
+  width: 200px;          
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+}
+
+.product-card img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;   
+}
+
+/* cards Section 2 */
+/* Main horizontal row of cards */
+.amazon-row {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  background-color: #eaeded;
+  padding: 20px;
+  overflow-x: auto; /* Handles overflow on small screens */
+}
+
+/* Individual Large Card */
+.category-card {
+  background-color: #fff;
+  padding: 20px;
+  width: 310px;
+  flex-shrink: 0; /* Important: stops cards from shrinking */
+  display: flex;
+  flex-direction: column;
+}
+
+/* The "Inner Grid" using Flexbox */
+.flex-grid {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to drop to the next line */
+  gap: 15px;       /* Spacing between the 4 items */
+  margin: 15px 0;
+}
+
+/* Individual Item (one of the four) */
+.grid-item {
+  /* Calculate width: 50% minus half the gap to fit 2 per row */
+  flex: 0 0 calc(50% - 8px); 
+  display: flex;
+  flex-direction: column;
+}
+
+.img-wrapper {
+  background-color: #f7f8f8;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.grid-item p {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+
+
+/* Personalised recomendation section */
+
+.personalised-recomendation-main{
+    gap: 15px;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+}
+.personalised-recomendation-main > p{
+    font-size: 14px;
+}
+
+.personalised-recomendation-btn{
+    background-color: #FFD814;
+    padding: 8px 65px;
+    border-radius: 15px;   
+}
+
+/* Back to top page */
+
+.back-to-top-main{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background-color: #37475A;
+    color: white;
+}
+
+.footer-section-main{
+    justify-content: space-between;
+    padding-top: 30px;
+    padding: 30px 100px;
+    background-color: #232F3E;
+    
+}
+.footer-section-main h2 {
+    font-size: 15px;
+    color: white;
+
+}
+.footer-section-main p {
+    font-size: 13px;
+    padding:7px 0px;
+    color: white;
+}
+
+.managing-section{
+    overflow: hidden;
+    background-color: #232F3E;
+    color: white;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 50px;
+}
+.language-currency-country{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+}
+.parts{
+    font-size: 15px;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+    border: 1px solid rgb(201, 200, 200);
+    padding: 9px 0px;
+}
+.currency-part :nth-child(1){
+    font-size: 12px;
+}
+.currency-part {
+    font-size: 12px;
+}
+
+/* --- RESPONSIVE MEDIA QUERIES --- */
+
+/* For Tablets and small desktops (approx 1024px and below) */
+@media screen and (max-width: 1024px) {
+    .search-amazon {
+        width: 300px; /* Reduce search bar width */
+    }
+
+    .footer-section-main {
+        padding: 30px 40px; /* Reduce horizontal padding */
+    }
+}
+
+/* For Mobile Devices (approx 768px and below) */
+@media screen and (max-width: 768px) {
+    
+    /* 1. Navbar adjustments */
+    .navbar {
+        height: auto;
+        flex-wrap: wrap;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .search-amazon {
+        width: 60vw; /* Make search bar fluid */
+    }
+
+    /* Hide less essential items on small screens to save space */
+    .area-delivery, .flag-dropDwn, .return-texts {
+        display: none; 
+    }
+
+    /* 2. Hero Section */
+    .hero-section {
+        height: 300px; /* Smaller banner for mobile */
+    }
+
+    /* 3. Cards Section - Stack cards vertically */
+    .cards-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-wrapper, .category-card {
+        width: 95%; /* Almost full width */
+        height: auto;
+    }
+
+    /* 4. Horizontal Slider adjustment */
+    .product-slider {
+        padding-left: 10px;
+    }
+
+    /* 5. Footer columns - Stack them */
+    .footer-section-main {
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    /* 6. Language/Currency Section */
+    .managing-section {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .language-currency-country {
+        flex-direction: column;
+        width: 90%;
+        gap: 10px;
+    }
+
+    .parts {
+        width: 100%; /* Buttons take full width on mobile */
+    }
+}
+
+/* For Extra Small Screens (phones, 480px and below) */
+@media screen and (max-width: 480px) {
+    .logo-amazon {
+        width: 80px;
+    }
+
+    .search-amazon {
+        width: 50vw;
+    }
+
+    .secondryNav {
+        overflow-x: auto; /* Allow horizontal scrolling for sub-nav links */
+        white-space: nowrap;
+        justify-content: flex-start;
+    }
+}
