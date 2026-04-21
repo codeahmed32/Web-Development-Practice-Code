@@ -67,6 +67,24 @@ const App = () => {
         }
     }
 
+    // Todo list 
+
+    const [todos, setTodos] = useState([]);
+
+    //Todo's Delete Functionality
+
+    function deleteTodo(todoToDelete) {
+        const filterTodos = todos.filter((td) => td != todoToDelete);
+
+        setTodos(filterTodos); // ✅ IMPORTANT FIX
+    }
+    // Todo's Edit Funcionality
+
+
+
+
+
+
 
 
 
@@ -143,6 +161,25 @@ const App = () => {
                 <button>Calculate BMI</button>
                 <div>Your BMI is {bmiCalculate}</div>
             </form>
+
+
+            <AddTodo setTodos={setTodos} />
+            <div className="todo-div">
+                <div className="todo-container">
+                    {todos.map((td) => {
+                        return (
+                            <div className="todo-div">
+                                <div className="todo-container">
+                                    <h3>{td}</h3>
+                                </div>
+                                <button className="btn-edit">Edit</button>
+                                <button className="btn-delete" onClick={(e) => deleteTodo(td)}>Delete</button>
+                            </div>
+                        )
+                    })}
+
+                </div>
+            </div >
 
 
         </div>
