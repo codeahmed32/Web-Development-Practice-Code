@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 100%;
+            height: 250px;
+            background-color: #42dfb7;
+            position: relative;
+
+        }
+
+        .child {
+            width: 50px;
+            height: 50px;
+            background-color: #f38d4e;
+            position: absolute;
+            right: 30px;
+            bottom: 3px;
+
+        }
+
+        .color {
+            width: 50px;
+            height: 50px;
+            background-color: #8770f9;
+            /* position: absolute; */
+            border: 1px solid black;
+
+        }
+
+        .navBar {
+            width: 100%;
+            height: 100px;
+            background-color: #f034f0;
+        }
+
+
+        /* agr child ko aik parent tk limit krna ha to parent to position relative deni pry gi 
+        and child ko "relative and absolute dono sath use hoty hain maximum time " */
+
+        /* media queries */
+
+        @media screen and (max-width : 786px) {
+            .color {
+                background-color: white;
+
+            }
+
+            .child {
+                background-color: rgb(125, 216, 255);
+            }
+
+            h1 {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 789px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+                background-color: green;
+                height: 800px;
+            }
+        }
+
+        @media screen and (min-width:481px) and (max-width : 768px) {
+            .links {
+                display: none;
+            }
+        }
+
+        @media screen and (min-width:769px) and (max-width:1279px) {
+            body {
+                font-size: 27px;
+            }
+
+            .navBar {
+                height: 300px;
+            }
+
+            .child {
+                width: 70px;
+                height: 70px;
+            }
+
+            .color {
+                width: 70px;
+                height: 70px;
+
+            }
+        }
+
+        @media print {
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                background-color: rgb(255, 255, 113);
+            }
+            .child{
+                background-color: #fff;
+            }
+            h1{
+                color:rgb(255, 139, 139);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navBar">
+        <div class="links">
+            <div>Home</div>
+            <div>contact us </div>
+            <div>about us </div>
+            <div>qualifications</div>
+            <div>soft skills</div>
+        </div>
+    </div>
+    <h1>Media Queries</h1>
+    <div class="container">
+        <div class="child">child 1</div>
+        <div class=" color">child 1</div>
+        <div class=" color">child 1</div>
+        <div class=" color">child 1</div>
+        <div class=" color">child 1</div>
+    </div>
+</body>
+
+</html>
