@@ -79,7 +79,20 @@ const App = () => {
         setTodos(filterTodos); // ✅ IMPORTANT FIX
     }
     // Todo's Edit Funcionality
+    const [editingIndex, setEditingIndex] = useState(null);
+    const [editText, setEditText] = useState("");
 
+    function startEdit(index, currentText) {
+        setEditingIndex(index);
+        setEditText(currentText);
+    }
+    function saveEdit(index) {
+        const updatedTodos = [...todos];
+        updatedTodos[index] = editText;
+        setTodos(updatedTodos);
+        setEditingIndex(null);
+        setEditText("");
+    }
 
 
 
@@ -166,13 +179,19 @@ const App = () => {
             <AddTodo setTodos={setTodos} />
             <div className="todo-div">
                 <div className="todo-container">
-                    {todos.map((td) => {
+                    {todos.map((td, index) => {
                         return (
                             <div className="todo-div">
                                 <div className="todo-container">
                                     <h3>{td}</h3>
                                 </div>
-                                <button className="btn-edit">Edit</button>
+
+                                {/* Edit mode inp tag */}
+                                <input type="text" value={editText} onChange={(e) => setEditText(e.target.value)} />
+                                <button onClick={() => saveEdit(index)}>Save</button>
+
+                                {/* Normal Mode Inp tag */}
+                                <button className="btn-edit" onClick={(e) => startEdit(index, td)}>Edit</button>
                                 <button className="btn-delete" onClick={(e) => deleteTodo(td)}>Delete</button>
                             </div>
                         )
