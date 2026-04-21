@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    overflow-x: hidden;
+
+}
+
+.flex {
+    display: flex;
+}
+
+.justfy-center {
+    justify-content: center;
+}
+
+.justfy-space-btwn {
+    justify-content: space-between;
+}
+
+/* Nav Bar Desgineng */
+.nav-container {
+    justify-content: space-between;
+    color: white;
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(to right, #0C7491, #002443);
+    align-items: center;
+    padding: 9px 23px;
+}
+
+.tu-navbar-base__icon[data-v-44c08f63] {
+    fill: #fff;
+    cursor: pointer;
+}
+
+svg {
+    overflow: hidden;
+}
+
+.logo-items {
+    font-size: 17px;
+    /* font-weight: 400; */
+    /* background-color: green; */
+    gap: 32px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo-items>a {
+    font-family: "Inter", sans-serif;
+    color: white;
+}
+
+.logo-items a:hover {
+    text-decoration: underline;
+}
+
+.login-signup {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 35px;
+
+}
+
+.btn-nav {
+    padding: 9px 13px;
+    border-radius: 5px;
+    font-family: "Inter", sans-serif;
+    color: white;
+    gap: 15px;
+}
+
+.btn-nav2 {
+    background-color: #0C7491;
+}
+.btn-nav2:hover{
+    background-color: #03546a;
+}
+.btn-nav1:hover{
+    text-decoration: underline;
+}
+
+/* middle Section */
+
+.main-container-section {
+    width: 100vw;
+    height: 100vh;
+    background-color: #002443;
+    
+}
+.utilites-container-section{
+    padding-top: 50px;
+        color: white;
+    /* border: 1px solid white; */
+    /* justify-content: space-around; */
+}
+.left-texts{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    gap: 23px;
+    width: 50%;
+    align-items: center;
+
+}
+.left-texts > h1 {
+    width: 50%;
+    /* font-size: 30px; */
+    font-family: "Inter", sans-serif;
+}
+.left-btns{
+    gap: 25px;
+}
+.left-texts > p{
+    width: 50%;
+    font-family: "Inter", sans-serif;
+    font-size: 17px;
+    
+}
+
+
+.left-texts-btn{
+    /* border: 1px solid white; */
+    padding: 10px 15px;
+    border-radius: 4px;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    color: white;
+}
+.left-texts-btn:hover{
+    background-color: rgb(166, 166, 166);
+}
+.btn1-texts{
+    background-color: #fff;
+    color: black;
+}
+.btn2-texts{
+    background-color: #0C7491;
+
+}
+.btn2-texts:hover{
+    background-color: #03546a;
+}
+/* Container & Main Card */
+.form-card {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: white;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+/* Hide the functional radio buttons */
+.state-control {
+  display: none;
+}
+
+/* Tab Layout */
+.tab-group {
+  display: flex;
+}
+
+.tab-item {
+  flex: 1;
+  padding: 22px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #ffffff; /* Default Inactive */
+  color: #333;
+  transition: background-color 0.2s;
+}
+
+/* Tab Logic: Color Swapping */
+#radio-shorten:checked ~ .tab-group .tab-shorten,
+#radio-qr:checked ~ .tab-group .tab-qr {
+  background-color: #1a7e96; 
+  color: white;
+}
+
+/* Form Body */
+.form-body {
+  padding: 30px;
+}
+
+.input-block {
+  margin-bottom: 25px;
+}
+
+.field-label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.required-star {
+  color: #c0392b;
+}
+
+/* Dynamic Label Text */
+.label-text::before { content: "Long URL"; }
+#radio-qr:checked ~ .form-body .label-text::before { content: "Destination URL"; }
+
+/* Inputs & Selects */
+.text-input, .select-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+
+.field-grid {
+  display: flex;
+  gap: 15px;
+  align-items: flex-end;
+}
+
+.grid-col { flex: 1; }
+.separator { font-size: 1.5rem; color: #999; padding-bottom: 10px; }
+
+.sub-text {
+  font-size: 0.8rem;
+  color: #777;
+  margin-top: 5px;
+}
+
+/* Action Button */
+.btn-submit {
+  width: 100%;
+  background-color: #9ca3af; 
+  color: white;
+  border: none;
+  padding: 18px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+
+.btn-submit::after { content: "Shorten Link"; }
+#radio-qr:checked ~ .form-body .btn-submit::after { content: "Generate QR Code"; }
+
+/* Legal Text */
+.legal-notice {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  margin-top: 25px;
+  color: #333;
+}
+
+.legal-notice a {
+  /* color: #1a7e96;     */
+  text-decoration: none;
+}
+
+.recent-links{
+    color: white;
+    background-color: #002443;
+    padding: 10px 50px;
+}
+.link-history-bg{
+
+    padding: 10px 20px;
+    border-radius: 9px;
+    background-color: white;
+    color: #002443;
+}
+.plans-section-main > h1{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+.plan-cards-container{
+    justify-content: space-around;
+    padding: 0px 40px;
+}
+.plan-cards{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid black; */
+    width: 200px;
+    height: 400px;
+}
+.plan-cards > Img:hover{
+    scale: 1.3;
+}
+
+.link-shortning-done-container{
+    width: 100%;
+    height: 600px;
+
+}
+.image-left{
+    width: 50%;
+    overflow: hidden;
+}
+.image-left img{
+    object-fit: contain;
+}
+.text-right{
+    width: 50%;
+    background-color: #0D7693;
+    padding: 70px 100px;
+    flex-direction: column;
+    gap: 40px;
+}
+.text-right-btn{
+    display: flex;
+    gap: 25px;
+}
+.right-btn1{
+    color: #002342;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.right-btn2:hover{
+    background-color: rgb(8, 137, 173);
+}
+
+    
+
+.right-btn2{
+    color: white;
+    border-radius: 5px;
+    background-color: #002342;
+    padding: 10px 20px;
+}
+
+.second-section{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.second-section-btn{
+    color: white;
+    border-radius: 5px;
+    background-color: #0D7693;
+    padding: 10px 20px; 
+}
+
+
+/* Container for the whole section */
+.features-container {
+  display: flex;
+  align-items: center; /* Vertically centers text next to image */
+  justify-content: center;
+  gap: 20px;
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  font-family: sans-serif;
+}
+
+/* Side columns for text */
+.side-content {
+  flex: 1; /* Gives both side columns equal width */
+  display: flex;
+  flex-direction: column;
+  gap: 60px; /* Space between the two text blocks in a column */
+}
+
+/* Center column for the image */
+.image-center {
+  flex: 1.5; /* Makes the image column slightly wider than text columns */
+  display: flex;
+  justify-content: center;
+}
+
+.image-center img {
+  width: 100%;
+  max-width: 500px; /* Adjust based on your image size */
+  height: auto;
+}
+
+/* Styling for the text blocks */
+.feature-box h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.feature-box p {
+  line-height: 1.6;
+  color: #555;
+  margin: 0;
+}
+
+/* The light blue box from the top-left of your image */
+.highlight {
+  /* background-color: #eef7fb; */
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.third-section-main{
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+.left-section{
+    color: white;
+    background-color: #002342;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    height: 500px;
+    border: 1px solid black;
+    padding: 90px 90px;
+}
+.right-section{
+    overflow: hidden;
+    border: 1px solid black;
+    height: 500px;
+    width: 50%;
+}
+.right-section > img {
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.title-para-container{
+    display: flex;
+    gap: 100px;
+    overflow: hidden;
+}
+.para-left-sections{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.container-section-4{
+    color: white;
+    width: 100%;
+    height: 250px;
+    justify-content: center;
+    background-color: #002443;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    gap: 13px;
+}
+
+.section4-btn-container{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    /* border: 1px solid black; */
+
+}
+.btn1-section4{
+    color: #002342;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 9px 13px;
+}
+.btn2-section4{
+    color:white;
+    background-color: #0C7491;
+    padding: 8px 15px;
+    border-radius: 4px;
+    padding: 9px 13px;
+}
+
+.footer {
+    padding: 40px 40px;
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    /* gap: 40px; */
+    justify-content: space-around;
+    background: linear-gradient(to right, #0C7491, #002443);
+}
+.sections-footer{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+.sections-footer > a {
+    color: white;
+}
+
+
