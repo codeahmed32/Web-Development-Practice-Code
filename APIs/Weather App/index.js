@@ -6,7 +6,7 @@ try {
         const cityName = cityRef.value;
         
         const weatherPromise = fetch(`https://p2pclouds.up.railway.app/v1/learn/weather?city=${cityName}`)
-
+// 
 
         weatherPromise
             .then((data) => {
