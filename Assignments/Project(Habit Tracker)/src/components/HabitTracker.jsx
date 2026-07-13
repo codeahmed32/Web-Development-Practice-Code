@@ -21,7 +21,7 @@ function HabitTracker() {
   }, [startDate]);
 
   const handleReset = () => {
-    const confirmReset = window.confirm("Kya aap waqai reset karna chahte hain?");
+    const confirmReset = window.confirm("Do You Really Want To Restart Your Tracking Journey");
     if (confirmReset) {
       const now = new Date().toISOString();
       localStorage.setItem('savedDate', now);
